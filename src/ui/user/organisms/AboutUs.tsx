@@ -13,6 +13,12 @@ const UserCard = () => {
     <Cards imageprops={image.image3} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
     <Cards imageprops={image.image4} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
     <Cards imageprops={image.image5} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
+    <Cards imageprops={image.image6} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
+    <Cards imageprops={image.image7} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
+    <Cards imageprops={image.image8} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
+    <Cards imageprops={image.image9} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
+    <Cards imageprops={image.image10} headingvalue='Heading' value='This is one of the most important in the images of this world because it was painted by the greatest of the greatest man in the history of the world '/>
+
     </div>
     </div>
   )
