@@ -1,31 +1,28 @@
-    .overlay {
-        background: #31393e;
-        background: linear-gradient(to right, #13131f, #31393e);
-        opacity: 0.8;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        top: 0;
-        
+.overlay {
+  background: #31393e;
+  background: linear-gradient(to right, #13131f, #31393e);
+  opacity: 0.8;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
 }
 
-.index{
-    z-index:1;
-
+.index {
+  z-index: 1;
 }
 
-.widest{
-    letter-spacing: 8px;
+.widest {
+  letter-spacing: 8px;
 }
 
-.shadow-box{
-    box-shadow:0px 0px 153px #ffffff73
+.shadow-box {
+  box-shadow: 0px 0px 153px #ffffff73;
 }
 
-.cinzel{
-    font-family: "Cinzel", serif;
+.cinzel {
+  font-family: 'Cinzel', serif;
 }
-

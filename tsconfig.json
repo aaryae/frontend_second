@@ -20,46 +20,20 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./src/",
-    "types": [
-      "vite/client"
-    ],
+    "types": ["vite/client"],
     "paths": {
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@templates/*": [
-        "templates/*"
-      ],
-      "@components/*": [
-        "components/*"
-      ],
-      "@config/*": [
-        "config/*"
-      ],
-      "@context/*": [
-        "context/*"
-      ],
-      "@data/*": [
-        "data/*"
-      ],
-      "@interface/*": [
-        "interface/*"
-      ],
-      "@types/*": [
-        "types/*"
-      ],
-      "@pages/*": [
-        "pages/*"
-      ],
-      "@services/*": [
-        "services/*"
-      ],
-      "@ui/*": [
-        "ui/*"
-      ],
-      "@utils/*": [
-        "utils/*"
-      ]
+      "@assets/*": ["assets/*"],
+      "@templates/*": ["templates/*"],
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@context/*": ["context/*"],
+      "@data/*": ["data/*"],
+      "@interface/*": ["interface/*"],
+      "@types/*": ["types/*"],
+      "@pages/*": ["pages/*"],
+      "@services/*": ["services/*"],
+      "@ui/*": ["ui/*"],
+      "@utils/*": ["utils/*"]
     }
   },
   "include": ["src"],

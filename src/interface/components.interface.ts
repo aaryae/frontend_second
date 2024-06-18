@@ -1,6 +1,5 @@
-
-export default interface inputtype{
-    type:string, 
-    placeholder:string,
-    id:string
+export default interface inputtype {
+  type: string
+  placeholder: string
+  id: string
 }
