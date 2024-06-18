@@ -7,7 +7,6 @@ import LoginButton from "../atoms/LoginButton";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
   const handleScroll = () => {
     setScrolled(window.scrollY > 0);
   };
@@ -23,13 +22,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed index w-full z-50 text-white duration-300 ${
-        scrolled ? "bg-black text-white shadow-2xl" : "bg-transparent"
+      className={`fixed index w-full z-50 text-black duration-300 ${
+        scrolled ? "bg-[#000000af] text-white shadow-2xl" : "bg-transparent"
       }`}
     >
       {menuOpen && (
         <div
-          className={`md:hidden h-screen bg-[#000000f1]  text-white p-4 relative`}
+          className={`md:hidden h-screen bg-[#000000f1]  text-black p-4 relative`}
         >
           <ul className="flex flex-col gap-4 text-center justify-center h-full">
             <li>
@@ -48,7 +47,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
-      <div className="flex w-full justify-between max-w-7xl mx-auto px-4">
+        <div className={`flex w-full justify-between max-w-7xl mx-auto px-4 ${scrolled? "text-white":"text-black"}`}>
         <Logo />
 
         <div className="hidden md:flex gap-10 justify-center items-center">

@@ -1,26 +1,17 @@
-import { image } from "@config/constant/image";
 import { Facebook, Instagram, TwitterIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import Heading from "../atoms/Heading";
-import Overlay from "../atoms/Overlay";
 import Paragraph from "../atoms/Paragraph";
 
 const Support = () => {
   return (
     <>
-      <div
-        className="flex items-center justify-center py-64 bg-gray-400 w-full relative "
-        style={{
-          backgroundImage: `url(${image.landingbg})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "fixed",
-        }}
+       <div className="bg-[#b5aa6f3b] py-60"
+       
       >
-        <Overlay />
-        <div className="index text-white max-w-7xl mx-auto">
+        <div className="index  max-w-7xl mx-auto">
           <Heading value="Support Us" />
-          <hr />
+          <hr className="bg-black h-1"/>
           <div className="py-20">
             <Paragraph
               value="A nice thank you gives them a sense that your company cares about their business and wants them to have a positive experience with your brand even after the transaction is complete. You can never underestimate the value of customer appreciation!"

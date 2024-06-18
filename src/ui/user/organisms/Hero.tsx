@@ -1,4 +1,3 @@
-import { image } from "@config/constant/image"
 import Heading from "@ui/user/atoms/Heading"
 import Paragraph from "@ui/user/atoms/Paragraph"
 import UniqueHeading from "@ui/user/atoms/UniqueHeading"
@@ -11,11 +10,15 @@ import UserCard from "./AboutUs"
 const Hero = () => {
   return (
     <>
-    <div className="flex w-full justify-between relative" style={{ backgroundImage: `url(${image.landingbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
-    <div className="overlay" >
-    </div>
+   
+
+    {/* <div className="flex w-full justify-between relative" style={{ backgroundImage: `url(${image.landingbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}> */}
+    <div className="bg-[#b5aa6f3b] ">
+
+    {/* <div className="overlay" >
+    </div> */}
     <Navbar/>
-    <div className="flex py-56 flex-col justify-center items-center text-white index gap-5 max-w-5xl mx-auto ">
+    <div className="flex py-56 flex-col justify-center items-center  index gap-5 max-w-5xl mx-auto ">
        <UniqueHeading value="WELCOME TO OUR WEBSITE,"/>
         <Heading value= "Revamp Your Closet, Revitalize Your Confidence"/>
         <div className="max-w-3xl">
