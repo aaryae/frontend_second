@@ -1,16 +1,17 @@
 import { image } from "@config/constant/image"
+import Heading from "@ui/user/atoms/Heading"
+import Paragraph from "@ui/user/atoms/Paragraph"
+import UniqueHeading from "@ui/user/atoms/UniqueHeading"
 import { Paperclip, ShoppingBagIcon } from "lucide-react"
-import Heading from "ui/user/atoms/Heading"
-import Paragraph from "ui/user/atoms/Paragraph"
-import UniqueHeading from "ui/user/atoms/UniqueHeading"
 import Navbar from "../../landingPage/organisms/Navbar"
 import Button from "../atoms/ButtonPrimary"
 import ButtonSecondary from "../atoms/ButtonSecondary"
+import UserCard from "./AboutUs"
 
 const Hero = () => {
   return (
     <>
-    <div className="flex w-full justify-between   relative" style={{ backgroundImage: `url(${image.landingbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+    <div className="flex w-full justify-between relative" style={{ backgroundImage: `url(${image.landingbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
     <div className="overlay" >
     </div>
     <Navbar/>
@@ -27,6 +28,7 @@ const Hero = () => {
         </div>
     </div>
     </div>
+    <UserCard/>
     </>
   )
 }

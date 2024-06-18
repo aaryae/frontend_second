@@ -1,7 +1,8 @@
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
-import Logo from "ui/commonpage/atoms/Logo";
-import Login from "../atoms/Login";
+import { Link } from "react-router-dom";
+import Logo from "ui/commonPage/atoms/Logo";
+import LoginButton from "../atoms/LoginButton";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,10 +27,12 @@ const Navbar = () => {
         {menuOpen && (
           <div className={`md:hidden h-screen bg-[#000000f1]  text-white p-4 relative`}>
             <ul className="flex flex-col gap-4 text-center justify-center h-full">
-              <li><a href="#">Demos</a></li>
+              <li><Link to="/">Home</Link></li>
               <li><a href="#">Support</a></li>
             </ul>
-            <Login/>
+            <Link to="/login">
+            <LoginButton/></Link>
+           
             <div className="absolute top-0 right-0 p-10" onClick={toggleMenu}>
             <X/>
             </div>
@@ -41,11 +44,13 @@ const Navbar = () => {
           <div className="hidden md:flex gap-10 justify-center items-center">
             <ul className="hidden md:flex gap-10 justify-center items-center">
 
-            <li className="tracking-wider font-extrabold"><a href="#">Demos</a></li>
+            <li className="tracking-wider font-extrabold"><Link to="/">Home</Link></li>
             <li className="tracking-wider"><a href="#">Support</a></li>
+            
             </ul>
             
-          <Login/>
+            <LoginButton/>
+            
           </div>
 
           <div className="flex md:hidden items-center">
