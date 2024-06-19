@@ -1,5 +1,5 @@
-import Heading from '@ui/user/atoms/Heading'
-import Paragraph from '@ui/user/atoms/Paragraph'
+import Heading from '@ui/landingPage/atoms/Heading'
+import Paragraph from '@ui/landingPage/atoms/Paragraph'
 import { Facebook, Instagram, TwitterIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
 

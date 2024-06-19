@@ -4,11 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Inter', sans-serif;
-  src: url('../src/assets/fonts/Inter/Inter-Black.ttf');
-}
-
 * {
   font-family:
     system-ui,
@@ -24,4 +19,5 @@
     sans-serif;
   list-style: none;
   text-decoration: none;
+  transition:0.1s ease-in;
 }

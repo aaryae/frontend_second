@@ -1,21 +1,17 @@
-import Heading from '@ui/user/atoms/Heading'
-import Paragraph from '@ui/user/atoms/Paragraph'
-
-import { Paperclip, ShoppingBagIcon } from 'lucide-react'
-// import Navbar from '../../landingPage/organisms/Navbar'
+import Button from '@ui/landingPage/atoms/ButtonPrimary'
+import ButtonSecondary from '@ui/landingPage/atoms/ButtonSecondary'
+import Heading from '@ui/landingPage/atoms/Heading'
+import UniqueHeading from '@ui/landingPage/atoms/HeadingUnderlined'
+import Paragraph from '@ui/landingPage/atoms/Paragraph'
 import Navbar from '@ui/landingPage/organisms/Navbar'
-import Button from '@ui/user/atoms/ButtonPrimary'
-import ButtonSecondary from '@ui/user/atoms/ButtonSecondary'
-import UniqueHeading from '@ui/user/atoms/HeadingUnderlined'
+import { Paperclip, ShoppingBagIcon } from 'lucide-react'
 import UserCard from './AboutUs'
 
 const Hero = () => {
   return (
     <>
-      {/* <div className="flex w-full justify-between relative" style={{ backgroundImage: `url(${image.landingbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}> */}
       <div className='bg-[#b5aa6f3b] '>
-        {/* <div className="overlay" >
-    </div> */}
+        
     
         <Navbar />
         <div className='flex py-56 flex-col justify-center items-center  index gap-5 max-w-5xl mx-auto '>

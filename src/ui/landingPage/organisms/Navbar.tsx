@@ -1,5 +1,6 @@
 import Logo from '@ui/commonPage/atoms/Logo'
-import LoginButton from '@ui/landingPage/atoms/LoginButton'
+import LoginButton from '@ui/user/atoms/LoginButton'
+import RegisterButton from '@ui/user/atoms/RegisterButton'
 import { X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed index w-full z-50 text-black duration-300 ${
-        scrolled ? 'bg-[#000000af] text-white shadow-2xl' : 'bg-transparent'
+        scrolled ? 'bg-[black] text-white shadow-2xl' : 'bg-transparent'
       }`}
     >
       {menuOpen && (
@@ -46,7 +47,7 @@ const Navbar = () => {
         </div>
       )}
       <div className={`flex w-full justify-between max-w-7xl mx-auto px-4 ${scrolled ? 'text-white' : 'text-black'}`}>
-        <Logo />
+        <Logo color={`${scrolled ? 'text-white' : 'text-black'}`} />
 
         <div className='hidden md:flex gap-10 justify-center items-center'>
           <ul className='hidden md:flex gap-10 justify-center items-center'>
@@ -57,8 +58,12 @@ const Navbar = () => {
               <Link to='/support'>Support</Link>
             </li>
           </ul>
+          <div className='flex gap-1 '>
 
           <LoginButton />
+          /
+          <RegisterButton/>
+          </div>
         </div>
 
         <div className='flex md:hidden items-center'>

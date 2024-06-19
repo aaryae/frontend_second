@@ -1,21 +1,29 @@
-import Hero from '@ui/user/organisms/Hero'
+import Hero from '@ui/landingPage/organisms/Hero'
+import LandingPageTemplate from '@ui/landingPage/template/LandingPageTemplate'
 import Login from '@ui/user/pages/Login'
+import Register from '@ui/user/pages/Register'
 import Support from '@ui/user/pages/Support'
-import UserTemplate from '@ui/user/template/UserTemplate'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
 function App() {
+
+    const router = createBrowserRouter([{
+      path:'/',
+      element:<LandingPageTemplate/>,
+      children:[
+        {index:true, element:<Hero/>},
+        {path:'/support', element:<Support/>},
+        {path:'/login', element:<Login/>},
+        {path:'/register', element:<Register/>}
+      ]
+
+  
+
+    }])
+
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='' element={<UserTemplate />}>
-            <Route path='/' element={<Hero />} />
-            <Route path='/support' element={<Support />} />
-            <Route path='/login' element={<Login />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+     <RouterProvider router={router} />
     </>
   )
 }
