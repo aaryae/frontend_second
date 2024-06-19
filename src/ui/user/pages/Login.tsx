@@ -1,7 +1,7 @@
+import HeadingSecondary from '@ui/user//atoms/HeadingSecondary'
+import ButtonSecondary from '@ui/user/atoms/ButtonSecondary'
+import Label from '@ui/user/atoms/Label'
 import Input from '@utils/theme/components/Input'
-import ButtonSecondary from '../atoms/ButtonSecondary'
-import HeadingSecondary from '../atoms/HeadingSecondary'
-import Label from '../atoms/Label'
 
 const Login = () => {
   return (

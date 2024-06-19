@@ -1,10 +1,12 @@
 import Heading from '@ui/user/atoms/Heading'
 import Paragraph from '@ui/user/atoms/Paragraph'
-import UniqueHeading from '@ui/user/atoms/UniqueHeading'
+
 import { Paperclip, ShoppingBagIcon } from 'lucide-react'
-import Navbar from '../../landingPage/organisms/Navbar'
-import Button from '../atoms/ButtonPrimary'
-import ButtonSecondary from '../atoms/ButtonSecondary'
+// import Navbar from '../../landingPage/organisms/Navbar'
+import Navbar from '@ui/landingPage/organisms/Navbar'
+import Button from '@ui/user/atoms/ButtonPrimary'
+import ButtonSecondary from '@ui/user/atoms/ButtonSecondary'
+import UniqueHeading from '@ui/user/atoms/HeadingUnderlined'
 import UserCard from './AboutUs'
 
 const Hero = () => {
@@ -14,6 +16,7 @@ const Hero = () => {
       <div className='bg-[#b5aa6f3b] '>
         {/* <div className="overlay" >
     </div> */}
+    
         <Navbar />
         <div className='flex py-56 flex-col justify-center items-center  index gap-5 max-w-5xl mx-auto '>
           <UniqueHeading value='WELCOME TO OUR WEBSITE,' />

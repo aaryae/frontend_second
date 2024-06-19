@@ -1,7 +1,7 @@
+import Heading from '@ui/user/atoms/Heading'
+import Paragraph from '@ui/user/atoms/Paragraph'
 import { Facebook, Instagram, TwitterIcon } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import Heading from '../atoms/Heading'
-import Paragraph from '../atoms/Paragraph'
 
 const Support = () => {
   return (

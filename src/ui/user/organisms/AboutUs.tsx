@@ -1,7 +1,6 @@
 import { image } from '@config/constant/image'
-// import Cards from '@ui/landingPage/molecules/Cards'
 import Cards from '@ui/landingPage/molecules/Cards'
-import HeadingSecondary from '../atoms/HeadingSecondary'
+import HeadingSecondary from "@ui/user/atoms/HeadingSecondary"
 
 const UserCard = () => {
   return (
