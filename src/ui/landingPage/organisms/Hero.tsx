@@ -2,11 +2,11 @@ import { hero } from '@data/localization/landingPage/hero'
 import Button from '@ui/landingPage/atoms/ButtonPrimary'
 import ButtonSecondary from '@ui/landingPage/atoms/ButtonSecondary'
 import Heading from '@ui/landingPage/atoms/Heading'
-import HeadingUnderlined from '@ui/landingPage/atoms/HeadingUnderlined'
 import Paragraph from '@ui/landingPage/atoms/Paragraph'
 import Navbar from '@ui/landingPage/organisms/Navbar'
 import useLang from 'hooks/useLang'
 import { Paperclip, ShoppingBagIcon } from 'lucide-react'
+import HeadingUnderlined from '../atoms/HeadingUnderlined'
 import UserCard from './AboutUs'
 
 const Hero = () => {
@@ -21,6 +21,7 @@ const Hero = () => {
           <Heading value={`${hero.slogan[lang]}`} />
           <div className='max-w-3xl'>
             <Paragraph value={`${hero.aboutsite[lang]}`} />
+
           </div>
           <div className='flex'>
             <Button value={`${hero.purchase[lang]}`} icons={<ShoppingBagIcon />} />

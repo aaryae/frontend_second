@@ -13,7 +13,7 @@ const UserCard = () => {
         <Cards imageprops={image.image1} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
         <Cards imageprops={image.image2} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
         <Cards imageprops={image.image3} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
-        <Cards imageprops={image.image4} headingvalue='Heading' value={`${cards.paragraph[lang]}`} />
+        <Cards imageprops={image.image4} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
         <Cards imageprops={image.image5} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
         <Cards imageprops={image.image6} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
         <Cards imageprops={image.image7} headingvalue={`${cards.heading[lang]}`} value={`${cards.paragraph[lang]}`} />
