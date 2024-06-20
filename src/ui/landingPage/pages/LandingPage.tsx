@@ -1,17 +1,13 @@
-import Navbar from 'ui/landingPage/organisms/Navbar'
-import UserCard from '../../user/organisms/AboutUs'
-import Footer from '../../user/organisms/Footer'
-import Hero from '../../user/organisms/Hero'
+import UserCard from '@ui/landingPage/organisms/AboutUs'
+import Hero from '@ui/landingPage/organisms/Hero'
 
-const Userpage = () => {
+const Landingpage = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <UserCard />
-      <Footer />
     </>
   )
 }
 
-export default Userpage
+export default Landingpage

@@ -1,6 +1,6 @@
+import Footer from '@ui/landingPage/organisms/Footer'
+import Navbar from '@ui/landingPage/organisms/Navbar'
 import { Outlet } from 'react-router-dom'
-import Navbar from 'ui/landingPage/organisms/Navbar'
-import Footer from '../organisms/Footer'
 
 const UserTemplate = () => {
   return (
