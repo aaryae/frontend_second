@@ -5,17 +5,18 @@ import useToggle from 'hooks/useToggle'
 
 const Flags = () => {
   const [changeFlag, toggleFlag] = useToggle()
-  const { setLang } = useLang()
+  const { lang,setLang } = useLang()
+  
 
   return (
     <div
       className='inline-block top-[27px] right-[100px] h-[30px] text-center rounded-full bg-white overflow-hidden cursor-pointer'
       onClick={() => {
         toggleFlag()
-        changeFlag ? setLang(languageEnum.en) : setLang(languageEnum.ne)
+        changeFlag ? setLang(languageEnum.en)  : setLang(languageEnum.ne)
       }}
     >
-      {changeFlag ? (
+      {lang==='ne' ? (
         <img src={image.nepalFlag} alt='flag' className='h-full w-[30px] cursor-pointer' />
       ) : (
         <img src={image.usFlag} alt='flag' className='h-full w-[30px] cursor-pointer' />

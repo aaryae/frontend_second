@@ -1,4 +1,7 @@
+import { registerSchema } from '@config/schema/common/auth.schema'
 import { registerUser } from '@data/localization/user/register'
+import { yupResolver } from '@hookform/resolvers/yup'
+import { registerType } from '@type/global.types'
 import Input from '@ui/commonPage/atoms/Input'
 import ButtonPrimary from '@ui/landingPage/atoms/ButtonPrimary'
 import Heading from '@ui/landingPage/atoms/Heading'
@@ -8,9 +11,16 @@ import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 const Register = () => {
-  const { register } = useForm()
   const { lang } = useLang()
+  const { register ,handleSubmit , formState: { errors }, } = useForm<registerType>(
+    {
+      resolver: yupResolver(registerSchema(lang)),
+    }
+  )
 
+    const onSubmit=()=>{
+      console.log("send")
+    }
   return (
     <>
       <div className='bg-[#00000013] h-screen'>
@@ -19,11 +29,12 @@ const Register = () => {
             <Heading value={`${registerUser.accountSignUp[lang]}`} />
             <hr />
           </div>
-          <form>
+          <form onChange={handleSubmit(onSubmit)}>
             <div className='grid sm:grid-cols-2 gap-y-7 gap-x-12'>
               <div>
                 <Label value='First Name' />
                 <Input type='text' id='firstName' placeholder='Enter your First Name' register={register} />
+                
               </div>
               <div>
                 <Label value='Last Name' />
@@ -33,10 +44,12 @@ const Register = () => {
               <div>
                 <Label value='Phonenumber' />
                 <Input type='tel' id='phonenumber' placeholder='Enter your Phone Number' register={register} />
+                {errors.email && <span className='text-red-500 text-sm mt-1'>{errors.email?.message}</span>}
+
               </div>
               <div>
                 <Label value='Email' />
-                <Input type='email' id='username' placeholder='Enter your Email' register={register} />
+                <Input type='email' id='email' placeholder='Enter your Email' register={register} />
               </div>
               <div>
                 <Label value='Password' />
@@ -48,7 +61,7 @@ const Register = () => {
               </div>
             </div>
             <br />
-            <ButtonPrimary value='Sign Up' icons='' />
+            <ButtonPrimary type='submit' value='Sign Up' icons='' />
 
             <Link to='/login'>
               <h1 className='text-sm absolute bottom-[220px] text-[#af4133]  hover:underline cursor-pointer'>
