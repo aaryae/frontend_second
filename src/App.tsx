@@ -1,4 +1,3 @@
-import { LanguageProvider } from '@context/Language'
 import Hero from '@ui/landingPage/organisms/Hero'
 import LandingPageTemplate from '@ui/landingPage/template/LandingPageTemplate'
 import Login from '@ui/user/pages/Login'
