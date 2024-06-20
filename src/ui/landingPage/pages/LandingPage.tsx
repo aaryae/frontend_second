@@ -6,7 +6,6 @@ const Landingpage = () => {
     <>
       <Hero />
       <UserCard />
-      
     </>
   )
 }

@@ -5,9 +5,9 @@ import Navbar from '../organisms/Navbar'
 const LandingPageTemplate = () => {
   return (
     <>
-    <Navbar/>
-    <Outlet/>
-    <Footer/>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
   )
 }

@@ -11,8 +11,6 @@ const Hero = () => {
   return (
     <>
       <div className='bg-[#b5aa6f3b] '>
-        
-    
         <Navbar />
         <div className='flex py-56 flex-col justify-center items-center  index gap-5 max-w-5xl mx-auto '>
           <UniqueHeading value='WELCOME TO OUR WEBSITE,' />

@@ -1,9 +1,9 @@
 import { FieldValues, UseFormRegister } from 'react-hook-form'
 
-export default interface inputtype {
+export interface inputtype {
   type: string
   placeholder: string
   id: string
-  autocomplete?:'on' | 'off'
+  autocomplete?: 'on' | 'off'
   register: UseFormRegister<FieldValues>
 }

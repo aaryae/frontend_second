@@ -6,12 +6,8 @@ import Label from '@ui/landingPage/atoms/Label'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
-
-
 const Login = () => {
-
-  const {register}=useForm()
-
+  const { register } = useForm()
 
   return (
     <div className='flex items-center justify-center py-64 bg-[#00000013] h-screen  '>
@@ -19,24 +15,24 @@ const Login = () => {
       <div className='bg-transparent  p-8 rounded-lg  index relative w-[98vw] md:w-[50vw] lg:w-[30vw]  '>
         <Heading value='Hello Welcome,' />
         <hr />
-        <form  className='py-10 px-4'>
+        <form className='py-10 px-4'>
           <div className='mb-4'>
-            <Label value='Email' required={false}/>
+            <Label value='Email' required={false} />
             <Input type='email' id='username' placeholder='Enter your Email' register={register} />
           </div>
           <div className='mb-6'>
-            <Label value='password' required={false}/>
-            <Input id='password' type='password' placeholder='Enter your Password' register={register}/>
+            <Label value='password' required={false} />
+            <Input id='password' type='password' placeholder='Enter your Password' register={register} />
           </div>
-            <Rememberme/>
+          <Rememberme />
           <div className='flex items-center justify-between'>
-            <ButtonPrimary  value='Sign In' icons='' />
+            <ButtonPrimary value='Sign In' icons='' />
           </div>
-          
         </form>
-        <Link to="/register">
-      <h1 className='text-sm absolute bottom-[5px]  text-[#af4133]  hover:underline cursor-pointer '>Don't have an account? <span className='font-bold'>Sign Up</span></h1>
-
+        <Link to='/register'>
+          <h1 className='text-sm absolute bottom-[5px]  text-[#af4133]  hover:underline cursor-pointer '>
+            Don't have an account? <span className='font-bold'>Sign Up</span>
+          </h1>
         </Link>
       </div>
     </div>

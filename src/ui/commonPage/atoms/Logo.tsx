@@ -1,7 +1,7 @@
 import { Box } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const Logo = ({color}:{color:string}) => {
+const Logo = ({ color }: { color: string }) => {
   return (
     <Link to='/'>
       <div className={`flex justify-center items-center w-fit p-3 gap-2 cursor-pointer ${color}`}>

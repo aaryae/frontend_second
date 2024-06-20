@@ -9,7 +9,11 @@ import image7 from '@assets/images/cards/image7.avif'
 import image8 from '@assets/images/cards/image8.jpeg'
 import image9 from '@assets/images/cards/image9.jpeg'
 
+
+import nepalFlag from '@assets/images/flags/nepalFlag.svg'
+import usFlag from "@assets/images/flags/usFlag.svg"
 import landingbg from '@assets/images/landingbg.avif'
+
 
 export const image = {
   landingbg,
@@ -23,4 +27,6 @@ export const image = {
   image8,
   image9,
   image10,
+  usFlag,
+  nepalFlag
 }

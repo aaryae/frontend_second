@@ -5,7 +5,7 @@ const Footer = () => {
         <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
           © 2023{' '}
           <a href='https://aarya.com/' className='hover:underline'>
-            THEAARYAE™ 
+            THEAARYAE™
           </a>
           . All Rights Reserved.
         </span>
