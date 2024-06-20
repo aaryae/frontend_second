@@ -1,27 +1,27 @@
-import { navbar } from '@data/localization/landingPage/navbar';
-import Logo from '@ui/commonPage/atoms/Logo';
-import Flags from '@ui/commonPage/organisms/Flags';
-import LoginButton from '@ui/user/atoms/LoginButton';
-import RegisterButton from '@ui/user/atoms/RegisterButton';
-import useLang from 'hooks/useLang';
-import usetoggle from 'hooks/useToggle';
-import { X } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { navbar } from '@data/localization/landingPage/navbar'
+import Logo from '@ui/commonPage/atoms/Logo'
+import Flags from '@ui/commonPage/organisms/Flags'
+import LoginButton from '@ui/user/atoms/LoginButton'
+import RegisterButton from '@ui/user/atoms/RegisterButton'
+import useLang from 'hooks/useLang'
+import usetoggle from 'hooks/useToggle'
+import { X } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, toggleMenuOpen] = usetoggle(false);
-  const {lang}=useLang()
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, toggleMenuOpen] = usetoggle(false)
+  const { lang } = useLang()
 
   const handleScroll = () => {
-    setScrolled(window.scrollY > 0);
-  };
+    setScrolled(window.scrollY > 0)
+  }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <>
@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

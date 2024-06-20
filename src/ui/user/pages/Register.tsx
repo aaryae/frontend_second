@@ -1,19 +1,22 @@
+import { registerUser } from '@data/localization/user/register'
 import Input from '@ui/commonPage/atoms/Input'
 import ButtonPrimary from '@ui/landingPage/atoms/ButtonPrimary'
 import Heading from '@ui/landingPage/atoms/Heading'
 import Label from '@ui/landingPage/atoms/Label'
+import useLang from 'hooks/useLang'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 const Register = () => {
   const { register } = useForm()
+  const { lang } = useLang()
 
   return (
     <>
       <div className='bg-[#00000013] h-screen'>
         <div className='max-w-4xl mx-auto  font-[sans-serif] text-[#333] p-6 py-64 relative'>
           <div className='text-center mb-16'>
-            <Heading value='Sign up into your account' />
+            <Heading value={`${registerUser.accountSignUp[lang]}`} />
             <hr />
           </div>
           <form>
@@ -49,7 +52,8 @@ const Register = () => {
 
             <Link to='/login'>
               <h1 className='text-sm absolute bottom-[220px] text-[#af4133]  hover:underline cursor-pointer'>
-                Already have an account? <span className='font-bold'>Sign In</span>
+                {`${registerUser.account[lang]}`}
+                <span className='font-bold'>{`${registerUser.signIn[lang]}`}</span>
               </h1>
             </Link>
           </form>

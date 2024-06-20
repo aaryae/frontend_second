@@ -1,5 +1,4 @@
 export enum languageEnum {
-    en = 'en',
-    ne = 'ne',
-  }
-  
+  en = 'en',
+  ne = 'ne',
+}

@@ -1,19 +1,22 @@
+import { login } from '@data/localization/user/login'
 import Input from '@ui/commonPage/atoms/Input'
 import Rememberme from '@ui/commonPage/atoms/Rememberme'
 import ButtonPrimary from '@ui/landingPage/atoms/ButtonPrimary'
 import Heading from '@ui/landingPage/atoms/Heading'
 import Label from '@ui/landingPage/atoms/Label'
+import useLang from 'hooks/useLang'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
 
 const Login = () => {
   const { register } = useForm()
+  const { lang } = useLang()
 
   return (
     <div className='flex items-center justify-center py-64 bg-[#00000013] h-screen  '>
       {/* shadow-box	border border-white  shadow-lg*/}
       <div className='bg-transparent  p-8 rounded-lg  index relative w-[98vw] md:w-[50vw] lg:w-[30vw]  '>
-        <Heading value='Hello Welcome,' />
+        <Heading value={`${login.helloWelcome[lang]}`} />
         <hr />
         <form className='py-10 px-4'>
           <div className='mb-4'>
@@ -31,7 +34,7 @@ const Login = () => {
         </form>
         <Link to='/register'>
           <h1 className='text-sm absolute bottom-[5px]  text-[#af4133]  hover:underline cursor-pointer '>
-            Don't have an account? <span className='font-bold'>Sign Up</span>
+            {`${login.account[lang]}`} <span className='font-bold'>{`${login.signUp[lang]}`}</span>
           </h1>
         </Link>
       </div>

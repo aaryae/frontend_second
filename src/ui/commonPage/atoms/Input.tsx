@@ -3,7 +3,7 @@ import useToggle from 'hooks/useToggle'
 import { Eye, EyeOff } from 'lucide-react'
 
 const Input = ({ type, placeholder, id, register, autocomplete = 'off' }: inputtype) => {
-  const [showPassword, toggleShowPassword] = useToggle(false);
+  const [showPassword, toggleShowPassword] = useToggle(false)
 
   return (
     <div className='relative'>
@@ -16,10 +16,7 @@ const Input = ({ type, placeholder, id, register, autocomplete = 'off' }: inputt
         {...register(id)}
       />
       {type === 'password' && (
-        <div
-          className='absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer'
-          onClick={toggleShowPassword}
-        >
+        <div className='absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer' onClick={toggleShowPassword}>
           {showPassword ? <Eye strokeWidth={1} size={20} /> : <EyeOff strokeWidth={1} size={20} />}
         </div>
       )}
@@ -27,4 +24,4 @@ const Input = ({ type, placeholder, id, register, autocomplete = 'off' }: inputt
   )
 }
 
-export default Input;
+export default Input

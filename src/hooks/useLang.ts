@@ -1,18 +1,16 @@
-import LanguageContext from "@context/Language";
-import { langugaeType } from "@interface/global.interface";
-import { useContext } from "react";
+import LanguageContext from '@context/Language'
+import { langugaeType } from '@interface/global.interface'
+import { useContext } from 'react'
 
+const useLang = () => {
+  const contextValue = useContext(LanguageContext)
 
-const useLang=()=>{
-    const contextValue=useContext(LanguageContext)
+  const languageType: langugaeType = {
+    lang: contextValue.lang,
+    setLang: contextValue.setLang,
+  }
 
-    const languageType: langugaeType = {
-        lang: contextValue.lang,
-        setLang: contextValue.setLang,
-      }
-    
-    return languageType;
+  return languageType
 }
 
-export default useLang;
-
+export default useLang
