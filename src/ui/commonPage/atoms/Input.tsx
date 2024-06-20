@@ -9,7 +9,7 @@ const Input = ({ type, placeholder, id, register, autocomplete = 'off' }: inputt
     <div className='relative'>
       <input
         className='appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none'
-        type={type === 'password' && showPassword ? 'text' : type}
+        type={type === 'password' && showPassword ? 'text' : "text"}
         placeholder={placeholder}
         id={id}
         autoComplete={autocomplete}

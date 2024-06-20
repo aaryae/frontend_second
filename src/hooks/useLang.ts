@@ -5,6 +5,8 @@ import { useContext } from 'react'
 const useLang = () => {
   const contextValue = useContext(LanguageContext)
 
+
+
   const languageType: langugaeType = {
     lang: contextValue.lang,
     setLang: contextValue.setLang,
